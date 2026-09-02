@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Saavedra - CV 2026</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230984e3'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial' font-weight='bold' font-size='18' fill='white'%3ELS%3C/text%3E%3C/svg%3E">
+    <style>
+        @page { size: A4; margin: 1cm 1.6cm 0.5cm 1.6cm; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+            color: #1a1a2e;
+            line-height: 1.26;
+            font-size: 9pt;
+            background: #fff;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .container { max-width: 210mm; margin: 0 auto; padding: 10px 28px; }
+        /* Evitar cortar bloques entre paginas */
+        .section, .job, .header { break-inside: avoid; page-break-inside: avoid; }
+
+        /* HEADER */
+        .header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin-bottom: 12px; }
+        .header h1 { font-size: 13pt; font-weight: 700; color: #1a1a2e; letter-spacing: 1px; white-space: nowrap; }
+        .header .title { font-size: 9.5pt; color: #1a1a2e; margin-top: 4px; font-weight: 700; font-style: italic; }
+        .header-right { font-size: 8pt; color: #1a1a2e; text-align: right; line-height: 1.5; }
+        .header-right a { color: #0984e3; text-decoration: none; }
+
+        /* SECTION */
+        .section { margin-bottom: 1px; }
+        .section-title {
+            font-size: 10pt; font-weight: 700; color: #1a1a2e;
+            text-transform: uppercase; letter-spacing: 1px;
+            border-bottom: 2px solid #0984e3; padding-bottom: 1px;
+            margin-bottom: 4px;
+        }
+
+        /* SUMMARY */
+        .summary { font-size: 9pt; color: #333; text-align: justify; line-height: 1.26; }
+
+        /* SKILLS (bloques lineales - sin tabla, optimo ATS) */
+        .skill-cat { margin-bottom: 1px; }
+        .skill-cat .cat { font-weight: 700; color: #1a1a2e; display: inline; }
+        .skill-cat .cat::after { content: ": "; }
+        .skill-cat .val { color: #333; line-height: 1.3; text-align: left; display: inline; }
+        .tag { display: inline-block; background: #dceafb; border: 1px solid #b3d3ef; color: #2a5a8a; border-radius: 3px; padding: 0 3px; margin: 1px 3px 1px 0; white-space: nowrap; font-weight: 400; }
+        .tag-group-label { font-weight: 400; color: #1a1a2e; }
+        .skill-group { display: block; }
+
+        /* JOB */
+        .job { margin-bottom: 3px; }
+        .job-header { display: flex; align-items: baseline; white-space: nowrap; margin-bottom: 1px; }
+        .job-role::before { content: "\00a0\00a0\00a0"; }
+        .job-role { font-weight: 700; font-size: 11pt; color: #1a1a2e; padding-left: 2px; }
+        .job-company { font-weight: 700; font-size: 11pt; color: #1a1a2e; padding-left: 6px; }
+        .job-company::before { content: "| "; color: #999; }
+        .job-dates { font-weight: 700; font-size: 8pt; color: #1a1a2e; margin-left: auto; padding-left: 8px; }
+        .job-client { font-weight: 700; font-size: 9pt; color: #555; margin-bottom: 2px; }
+        /* LISTAS - bullets estandar para maximo parseo ATS */
+        .job ul { list-style-type: none; padding-left: 4px; margin-top: 2px; }
+        .job li { font-size: 9pt; color: #333; margin-bottom: 0.5px; line-height: 1.3; text-align: justify; }
+        .job li::before { content: "\2022\00a0"; color: #1a1a2e; font-weight: 400; }
+        .certs { list-style-type: none; padding-left: 4px; }
+        .certs li { font-size: 9pt; color: #333; margin-bottom: 0.5px; }
+        .certs li::before { content: "\2022\00a0"; color: #1a1a2e; font-weight: 400; }
+        .cert-meta { font-size: 8pt; color: #1a1a2e; margin-left: 6px; }
+
+        /* PRINT */
+        @media print {
+            body { background: #fff; }
+            .container { padding: 0; }
+            * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-left">
+            <h1>MARIA LAURA SAAVEDRA RODRIGUEZ</h1>
+            <div class="title">Senior Business Analyst | QA Technical Lead | Mentor</div>
+        </div>
+        <div class="header-right">
+            <a href="mailto:saalaura@gmail.com">Email: saalaura@gmail.com</a><br>
+            <span>Mobile: +598 97 496 335</span><br>
+            <a href="https://www.linkedin.com/in/maria-laura-saavedra-rodriguez-45029432/" target="_blank" rel="noopener">LinkedIn: linkedin.com/in/maria-laura-saavedra-rodriguez-45029432</a><br>
+            <span>Location: Montevideo, Uruguay</span><br>
+            <a href="https://github.com/saalaura-bit" target="_blank" rel="noopener">GitHub: github.com/saalaura-bit</a>
+        </div>
+    </div>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="summary">
+Senior Business Analyst with 15+ years bridging business and technical teams to translate requirements into effective solutions across FinTech, Pharma, Healthcare, and E-commerce, earlier building 15+ years of client-facing leadership in Tourism, Healthcare patient services, and Corporate/Government sales. Expert in requirements gathering, process improvement, and data analysis. Proven ability to document functional specifications, drive process optimization, and support the full project lifecycle from requirements to UAT, collaborating with global, cross-functional and remote stakeholders.
+        </p>
+    </div>
+
+    <!-- WORK EXPERIENCE -->
+    <div class="section">
+        <div class="section-title">Work Experience</div>
+
+        <!-- Globant -->
+        <div class="job">
+            <div class="job-header">
+                <span class="job-role">Business Analyst</span>
+                <span class="job-company">Globant</span>
+                <span class="job-dates">Aug 2021 - Apr 2026</span>
+            </div>
+            <ul>
+                <li><strong>Generative AI QA — Business Analyst &amp; Technical Lead (Jan–Apr 2026):</strong>
+                    <ul>
+                        <li>Elicited and analyzed business requirements for an AI-powered web application, translating them into detailed user stories and acceptance criteria.</li>
+                        <li>Facilitated stakeholder demos and workshops to validate requirements and solution alignment.</li>
+                        <li>Authored functional documentation supporting end-to-end delivery of the AI solution.</li>
+                    </ul>
+                </li>
+                <li><strong>Fiserv &amp; IPG LATAM Payment Gateway — Business Analyst (2023–2026):</strong>
+                    <ul>
+                        <li>Gathered and documented functional requirements across regions for a payments platform, coordinating with cross-functional Onsite/Offshore teams.</li>
+                        <li>Performed data analysis and process mapping to support solution design and implementation.</li>
+                        <li>Managed requirements and reporting artifacts in Jira, Xray, and Confluence, supporting delivery and release readiness.</li>
+                        <li>Acted as liaison between business and technical teams, ensuring alignment on scope and quality.</li>
+                    </ul>
+                </li>
+                <li><strong>CeriFi, E-Learning — Business Analyst (2022–2023):</strong>
+                    <ul>
+                        <li>Defined and documented business requirements and acceptance criteria with an E-Learning client, applying Kanban with weekly client demos.</li>
+                        <li>Collaborated with teams to support solution delivery, passing audits with no findings and earning client praise.</li>
+                        <li>Analyzed processes to improve team efficiency by 20%.</li>
+                    </ul>
+                </li>
+                <li><strong>CNA, Insurance — Business Analyst (2022):</strong>
+                    <ul>
+                        <li>Authored BRD and functional documentation to shape solution strategy for an insurance portal.</li>
+                        <li>Managed the client relationship and gathered requirements for end-to-end delivery.</li>
+                        <li>Applied requirements-driven analysis to reduce detection time by 40% through shift-left practices.</li>
+                    </ul>
+                </li>
+                <li><strong>VIX OTT App, Streaming — Business Analyst &amp; QA Focal (2021):</strong>
+                    <ul>
+                        <li>Joined at project phase 0, translating business requirements into test plans and user stories across Android mobile, Google TV, and Fire TV.</li>
+                        <li>Authored functional documentation and user stories in Xray with clear acceptance criteria (Given/When/Then).</li>
+                        <li>Supported UAT and validated incremental feature releases across three platforms.</li>
+                    </ul>
+                </li>
+                <li><strong>Mentorship:</strong>
+                    <ul>
+                        <li>Certified QC Lead and Career Mentor, guiding 20+ mentees in career development.</li>
+                        <li>Supported 80% of mentees in achieving a promotion within 18 months.</li>
+                        <li>Delivered AI learning sessions and coached teams on Scrum practices and cross-functional collaboration.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Wunderman Thompson -->
+        <div class="job">
+            <div class="job-header">
+                <span class="job-role">Business Analyst</span>
+                <span class="job-company">Wunderman Thompson</span>
+                <span class="job-dates">Mar 2021 - Aug 2021</span>
+            </div>
+            <div class="job-client">Client: Janssen (J&amp;J)</div>
+            <ul>
+                <li>Led QA for pharma digital marketing assets (websites, email campaigns, and more) under FDA and GxP compliance, delivering weekly to meet client and regulatory requirements.</li>
+                <li>Ensured 100% regulatory adherence across 4 product launches and 120+ deliverables.</li>
+                <li>Executed exploratory, black box, white box, smoke, and acceptance testing across Litmus, On Acid, VEEVA CRM, and Salesforce.</li>
+                <li>Conducted RCA on critical defects, cutting recurrence by 30% and shortening release cycles by 2 weeks.</li>
+            </ul>
+        </div>
+
+        <!-- BPS -->
+        <div class="job">
+            <div class="job-header">
+                <span class="job-role">Senior Business Analyst | QA Analyst</span>
+                <span class="job-company">ST Consultores</span>
+                <span class="job-dates">Mar 2011 - Jan 2020</span>
+            </div>
+            <div class="job-client">Client: BPS – Banco de Previsión Social (Uruguay)</div>
+            <ul>
+                <li>Elicited requirements through interviews, workshops, and document analysis for government financial modules, authoring BRD, SRS, URS, and FRD documents that reduced development rework by 25%.</li>
+                <li>Mapped 25+ business processes using BPMN, documenting As-Is and To-Be states for 3 system implementations, and participated in the Change Control Board (CCB) evaluating 100+ scope changes with ROI-based impact analysis.</li>
+                <li>Conducted stakeholder analysis that prevented $150K+ in unplanned costs.</li>
+                <li>Designed and executed functional and end-to-end test suites for .NET applications, covering batch mass processes, web services (SOAP), and Bizagi functionality.</li>
+                <li>Executed tests on relational and NoSQL databases, ensuring data integrity and successful technology migration.</li>
+                <li>Coordinated UAT cycles with RCA on critical defects.</li>
+            </ul>
+        </div>
+
+        <!-- VIDA -->
+        <div class="job">
+            <div class="job-header">
+                <span class="job-role">Operations &amp; Coordination Supervisor</span>
+                <span class="job-company">VIDA Servicio de Compañía / Asistencia Hospitalaria Prepaga</span>
+                <span class="job-dates">Jul 2008 - Jul 2011</span>
+            </div>
+            <div class="job-client">Client: Healthcare / Patient Care Services</div>
+            <ul>
+                <li>Supervised and coordinated operations across Montevideo and 19 regional sub-branches nationwide.</li>
+                <li>Implemented process improvements and cross-departmental controls to optimize service delivery and team efficiency.</li>
+            </ul>
+        </div>
+
+        <!-- Ramal Viajes -->
+        <div class="job">
+            <div class="job-header">
+                <span class="job-role">Administration &amp; Corporate Sales Analyst</span>
+                <span class="job-company">Ramal Viajes / Agencias de Viajes</span>
+                <span class="job-dates">Jul 2001 - Jul 2008</span>
+            </div>
+            <div class="job-client">Client: Tourism / Travel Agency Operations</div>
+            <ul>
+                <li>Managed corporate accounts, government tenders, and end-to-end sales operations for international and regional travel packages.</li>
+                <li>Handled customer relations, account administration, and contract negotiation for high-value corporate clients.</li>
+            </ul>
+        </div>
+
+        <!-- Ministerio de Defensa -->
+        <div class="job">
+            <div class="job-header">
+                <span class="job-role">Paralegal / Legal Assistant</span>
+                <span class="job-company">Ministerio de Defensa Nacional (Uruguay)</span>
+                <span class="job-dates">Jul 1996 - Jul 1999</span>
+            </div>
+            <div class="job-client">Client: Government / Public Sector</div>
+            <ul>
+                <li>Paralegal / Legal Assistant supporting legal and administrative processes.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CORE SKILLS (bloques lineales - optimizado ATS) -->
+    <div class="section">
+        <div class="section-title">Core Skills</div>
+        <div class="skill-cat"><span class="cat">Business Analysis</span> <span class="val"><span class="tag-group-label">Requirements:</span> Requirements Gathering, Requirements Elicitation, Workshops, Interviews, User Stories, Acceptance Criteria, Functional Specifications. <span class="tag-group-label">Documentation:</span> BRD, SRS, URS, FRD, NFR, Process Documentation, SOPs. <span class="tag-group-label">Process Improvement:</span> Business Process Modeling (BPMN), As-Is/To-Be Analysis, Gap Analysis, Process Flows, Cost-Benefit Analysis, MoSCoW Prioritization. <span class="tag-group-label">Data &amp; Reporting:</span> Data Analysis, SQL, Dashboards, Reports, Data Visualization, Excel. <span class="tag-group-label">Governance:</span> Change Control Board (CCB), Impact Analysis, RCA, Change Management, BABOK Framework. <span class="tag-group-label">Tools:</span> Jira, Confluence, Visio, PowerPoint, MS Office.</span></div>
+        <div class="skill-cat"><span class="cat">QA &amp; Solution Validation</span> <span class="val">Functional Testing, UAT, User Acceptance Testing Support, Test Strategy, Requirements-Based Testing, Test Planning, SDLC, Agile, Kanban, Quality Assurance, Continuous Improvement.</span></div>
+        <div class="skill-cat"><span class="cat">Agile Methodologies</span> <span class="val">Sprint Planning, Daily Standup, Sprint Review, Retrospective, Backlog Refinement, Story Points, Velocity Tracking, Definition of Done (DoD), SAFe, Kanban, SDLC.</span></div>
+        <div class="skill-cat"><span class="cat">Domain Expertise</span> <span class="val">FinTech, Payment Gateways, Transaction Processing, Regulatory Compliance, EdTech, OTT Streaming, Pharma GxP/FDA, Healthcare HIPAA &amp; Patient Care Services, Insurance, Government / Public Sector, Tourism &amp; Travel Agency Operations, Corporate &amp; Government Sales, Legal / Paralegal.</span></div>
+        <div class="skill-cat"><span class="cat">AI &amp; Innovation</span> <span class="val">AI-Powered Solutions, LLM Output Evaluation, Prompt Engineering, Responsible AI Practices, AI-Assisted Analysis.</span></div>
+        <div class="skill-cat"><span class="cat">Technical</span> <span class="val">SQL, Oracle DB, Web Services, SOAP, REST API, Data Modeling, Bizagi.</span></div>
+        <div class="skill-cat"><span class="cat">Tools</span> <span class="val">Jira, Xray, Confluence, Azure DevOps, TestRail, SQL, Excel, PowerPoint, Visio, MS Office Suite, Git.</span></div>
+        <div class="skill-cat"><span class="cat">Leadership &amp; Collaboration</span> <span class="val">Stakeholder Management, Cross-Functional Collaboration, Remote Team Coordination, Global Teams, Mentoring, Communication, Conflict Resolution, Strategic Thinking, Process Innovation, Continuous Improvement.</span></div>
+    </div>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <div class="section">
+        <div class="section-title">Education & Certifications</div>
+        <ul class="certs">
+            <li>Enterprise AI Solution &amp; AI Pilot Web Certification <span class="cert-meta">- Globant (2026)</span></li>
+            <li>AI Coda Solution Certification <span class="cert-meta">- Globant (2026)</span></li>
+            <li>Certified Mentor Trainer &amp; Leader (PMBOK) <span class="cert-meta">- Globant (2024)</span></li>
+            <li>ISTQB Certified Tester Foundation Level (CTFL v4.0) <span class="cert-meta">(2015)</span></li>
+            <li>Agile Methodologies <span class="cert-meta">- Florencia Rossy (2018)</span></li>
+            <li>Airline Reservation &amp; Ticketing Management (IATA) <span class="cert-meta">- Amadeus (2001)</span></li>
+            <li>Bachelor of Law (Legal Assistant / Procurator) <span class="cert-meta">- UDELAR (1998)</span></li>
+        </ul>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <ul class="certs">
+            <li>Spanish — Native</li>
+            <li>English — Working B2</li>
+            <li>Portuguese — Intermediate</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- FOOTER (pie de pagina fijo, se repite en cada hoja) -->
+<div style="position: fixed; bottom: 0; left: 0; right: 0; text-align: center; font-size: 7.5pt; color: #666; background: #fff; padding: 4px 8px 14px 8px;">
+    <div style="border-top: 1px solid #ddd; margin-bottom: 6px;"></div>
+    <strong>Laura Saavedra</strong> | saalaura@gmail.com | +598 97 496 335 | Montevideo, Uruguay
+</div>
+
+<script>
+  (function () {
+    var bloquea = function (e) {
+      e.preventDefault();
+      return false;
+    };
+    document.addEventListener('contextmenu', bloquea);
+    document.addEventListener('copy', bloquea);
+    document.addEventListener('cut', bloquea);
+    document.addEventListener('selectstart', function (e) { e.preventDefault(); return false; });
+    document.addEventListener('dragstart', function (e) { e.preventDefault(); return false; });
+    document.addEventListener('keydown', function (e) {
+      if ((e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 'p' || e.key === 's' || e.key === 'a')) || e.key === 'F12') {
+        e.preventDefault();
+        return false;
+      }
+    });
+  })();
+</script>
+</body>
+</html>
